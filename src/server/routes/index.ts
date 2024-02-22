@@ -6,13 +6,11 @@ import { CidadesController } from "./../controllers";
 const router = Router();
 
 router.get("/", (_, res) => {
-  return res.status(StatusCodes.OK).send("Olá, Dev!")
+  return res.status(StatusCodes.OK).send("Olá, Dev!");
 });
 
-router.post("/cidades", 
-CidadesController.createBodyValidator,
-CidadesController.createQueryValidator,
-CidadesController.create,
-)
+router.post(
+  "/cidades",CidadesController.createValidation, CidadesController.create
+);
 
 export { router };
