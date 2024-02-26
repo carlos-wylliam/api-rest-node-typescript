@@ -9,6 +9,9 @@ router.get("/", (_, res) => {
   return res.status(StatusCodes.OK).send("Olá, Dev!");
 });
 
+router.get(
+  "/cidades",CidadesController.getAllValidation, CidadesController.getAll
+);
 router.post(
   "/cidades",CidadesController.createValidation, CidadesController.create
 );
