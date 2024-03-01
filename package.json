@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "ts-node-dev ./src/index.ts",
-    "build": "tsc",
+    "postinstall": "tsc",
     "production": "node ./build/index.js",
     "test": "jest"
   },
