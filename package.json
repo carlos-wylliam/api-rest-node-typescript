@@ -6,9 +6,9 @@
   "author": "carlos-wylliam <carloswylliam023@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node-dev ./src/index.ts",
-    "build": "tsc",
-    "production": "node ./build/index.js",
+    "dev": "ts-node-dev ./src/index.ts",
+    "start": "node ./build/index.js",
+    "build": "tsc -p tsconfig.json",
     "test": "jest"
   },
   "dependencies": {
