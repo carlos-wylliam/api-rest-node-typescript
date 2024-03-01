@@ -1,4 +1,4 @@
-import { server } from './server/Terver';
+import { server } from './server/ServerIndex';
 
 
 server.listen(process.env.PORT || 3333, () => {
